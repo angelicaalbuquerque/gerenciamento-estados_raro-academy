@@ -1,23 +1,32 @@
-import { Plus as PlusIcon } from "@styled-icons/boxicons-regular/Plus";
-import { Subtract as SubtractIcon } from "@styled-icons/remix-fill/Subtract";
+import { Plus as PlusIcon } from '@styled-icons/boxicons-regular/Plus';
+import { Subtract as SubtractIcon } from '@styled-icons/remix-fill/Subtract';
 
-import { Wrapper, IconWrapper, Quantity } from "./styles";
+import { Wrapper, IconWrapper, Quantity } from './styles';
 
 type IncrementorProps = {
   id: number;
   quantity: number;
+  onIncrement: (id: number, quantity: number) => void;
+  onSubtract: (id: number, quantity: number) => void;
 };
 
-const Incrementor = ({ id, quantity }: IncrementorProps) => (
+const Incrementor = ({
+  id,
+  quantity,
+  onIncrement,
+  onSubtract,
+}: IncrementorProps) => (
   <Wrapper>
-    <IconWrapper>
-      <SubtractIcon aria-label="Subtract item" />
+    <IconWrapper
+      onClick={() => onSubtract(id, quantity)}
+      disabled={quantity === 0}>
+      <SubtractIcon aria-label='Subtract item' />
     </IconWrapper>
 
     <Quantity>{quantity}</Quantity>
 
-    <IconWrapper>
-      <PlusIcon aria-label="Add item" />
+    <IconWrapper onClick={() => onIncrement(id, quantity)}>
+      <PlusIcon aria-label='Add item' />
     </IconWrapper>
   </Wrapper>
 );

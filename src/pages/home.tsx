@@ -1,26 +1,70 @@
-import { useState } from "react";
-import Cart from "../components/Cart";
-import { Container } from "../components/Container";
-import Header from "../components/Header";
-import Product, { ProductProps } from "../components/Product";
-
-const data: ProductProps = {
-  id: 1,
-  name: "Product 1",
-  picture:
-    "https://somos.lojaiplace.com.br/wp-content/uploads/2021/04/apple_iphone-12-spring21_purple_04202021.jpg",
-  price: 20.50,
-};
+import { useCallback, useEffect, useState } from 'react';
+import Cart from '../components/Cart';
+import { Container } from '../components/Container';
+import Header from '../components/Header';
+import Product, { ProductProps } from '../components/Product';
+import api from '../services/api';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [products, setProducts] = useState<ProductProps[]>([]);
+
+  const loadProducts = useCallback(async () => {
+    const { data } = await api.get<ProductProps[]>('/products');
+
+    console.log(data);
+
+    setProducts(data);
+  }, []);
+
+  useEffect(() => {
+    loadProducts();
+  }, [loadProducts]);
+
+  const increment = useCallback(
+    async (id: number, quantity: number) => {
+      await api.patch(`/products/${id}`, {
+        quantity: quantity + 1,
+      });
+
+      await loadProducts();
+    },
+    [loadProducts],
+  );
+  const subtract = useCallback(
+    async (id: number, quantity: number) => {
+      await api.patch(`/products/${id}`, {
+        quantity: quantity - 1,
+      });
+
+      await loadProducts();
+    },
+    [loadProducts],
+  );
 
   return (
     <>
       <Header setIsOpen={setIsOpen} />
       <Container>
-        <Product {...data} />
-        <Cart isOpen={isOpen} setIsOpen={setIsOpen} />
+        {products.map((product) => {
+          return (
+            <Product
+              key={product.id}
+              {...product}
+              handleIncrement={increment}
+              handleSubtract={subtract}
+            />
+          );
+        })}
+        <Cart
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          products={products.map((item) => ({
+            ...item,
+            handleIncrement: increment,
+            handleSubtract: subtract,
+          }))}
+        />
       </Container>
     </>
   );
