@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+<h2 align="center">
+  Raro Shop | Raro Academy
+</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
 
-## Available Scripts
+<p align="center">
+<img alt="badge html" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/f96545c39b9ff34534ee166d78e4bcef00de3928/badges/html.svg">
+<img alt="badge typescript" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/main/badges/typescript.svg">
+<img alt="badge css" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/f96545c39b9ff34534ee166d78e4bcef00de3928/badges/css.svg">
+<img alt="badge prettier" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/56834a01279853fcf3ce5c7bf058f217fb2be110/badges/prettier-2.svg">
+<img alt="badge vscode" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/f96545c39b9ff34534ee166d78e4bcef00de3928/badges/visual-studio-code.svg">
+</p>
 
-In the project directory, you can run:
+<p align="center">
+<img alt="Made by Angélica Albuquerque" src="https://img.shields.io/badge/made%20by-Angélica Albuquerque-%20?color=44c3fe">
+<img alt="Repository size" src="https://img.shields.io/github/repo-size/angelicaalbuquerque/gerenciamento-estados_raro-academy?color=44c3fe">
+<img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/angelicaalbuquerque/gerenciamento-estados_raro-academy?color=44c3fe">
+</p>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📚 Sobre
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p align="center">
+  <img alt="Raro Shop" src=".github/raro-shop.gif" width="80%">
+</p>
 
-### `npm test`
+Criação de pequeno ecommerce, Raro Shop, para o módulo de Gerenciamento de Estados do bootcamp de React da Raro Academy.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Veja o repositório do curso [aqui](https://github.com/angelicaalbuquerque/react_raro-academy).
 
-### `npm run build`
+## 📬 Entre em contato!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="left">
+    <a href="https://www.frontangie.dev/" target="blank" style="text-decoration: none; color: unset;">
+    <img align="center" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/main/icons/circle/portfolio.svg" alt="frontangie.dev" height="50" width="50" />
+  </a>
+  <a href="https://linkedin.com/in/angelica-albuquerque/" target="blank" style="text-decoration: none; color: unset;">
+    <img align="center" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/main/icons/circle/linkedin.svg" alt="Linkedin" height="50" width="50" />
+  </a>
+  <a href="mailto:hi@frontangie.dev" target="blank" style="text-decoration: none;">
+    <img align="center" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/main/icons/circle/email.svg" alt="Email" height="50" width="50" />
+  </a>
+  <a href="https://twitter.com/frontangie" target="blank" style="text-decoration: none;">
+    <img align="center" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/main/icons/circle/twitter.svg" alt="Twitter" height="50" width="50" />
+    </a>
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+Feito com ☕ e 🖤 por Angélica Albuquerque
+</p>
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="center">
+<img src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/main/gif/hi.gif" width="25px"> 
+</p>
