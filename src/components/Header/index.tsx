@@ -9,6 +9,7 @@ type HeaderProps = {
 
 const Header = ({ setIsOpen }: HeaderProps) => (
   <Wrapper>
+    <h1>Raro Shop</h1>
     <ShoppingIcon onClick={() => setIsOpen(true)} aria-label="Shopping Icon" />
   </Wrapper>
 );
