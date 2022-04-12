@@ -1,18 +1,16 @@
-import { useCallback, useEffect, useState } from 'react';
-import Cart from '../components/Cart';
-import { Container } from '../components/Container';
-import Header from '../components/Header';
-import Product, { ProductProps } from '../components/Product';
-import api from '../services/api';
+import { useCallback, useEffect, useState } from "react";
+import Cart from "../components/Cart";
+import { Container } from "../components/Container";
+import Header from "../components/Header";
+import Product, { ProductProps } from "../components/Product";
+import api from "../services/api";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [products, setProducts] = useState<ProductProps[]>([]);
 
   const loadProducts = useCallback(async () => {
-    const { data } = await api.get<ProductProps[]>('/products');
-
-    console.log(data);
+    const { data } = await api.get<ProductProps[]>("/products");
 
     setProducts(data);
   }, []);
