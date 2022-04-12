@@ -2,10 +2,31 @@
   "products": [
     {
       "id": 1,
-      "name": "Product 1",
+      "name": "Iphone 12 - Roxo",
       "picture": "https://somos.lojaiplace.com.br/wp-content/uploads/2021/04/apple_iphone-12-spring21_purple_04202021.jpg",
-      "quantity": 5,
-      "price": 299.5
+      "quantity": 1,
+      "price": 4899.5
+    },
+    {
+      "id": 2,
+      "name": "Fone KZ ZSN Pro X - Preto",
+      "picture": "https://m.media-amazon.com/images/I/61uXMoCx33L._AC_SY450_.jpg",
+      "quantity": 4,
+      "price": 92.7
+    },
+    {
+      "id": 3,
+      "name": "Smartwatch Mibro Color Bluetooth - Preto",
+      "picture": "https://cdn.shopify.com/s/files/1/0590/1231/7365/products/379093f2bf65f412be570fd7ef66f524.jpg?v=1628864090",
+      "quantity": 2,
+      "price": 277.9
+    },
+    {
+      "id": 4,
+      "name": "Headphone W800BT Plus Bluetooth 5.1 - Preto",
+      "picture": "https://m.media-amazon.com/images/I/51L5kUzPSpS._AC_SY355_.jpg",
+      "quantity": 9,
+      "price": 396.4
     }
   ]
 }
